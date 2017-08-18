@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private http: Http) { }
+  constructor(private https: Http) { }
 
   newDate;
   cityName;
@@ -25,11 +25,11 @@ export class AppComponent {
       this.geoFind();
       setTimeout(() => {
         this.searchCity();
-     }, 500);   
+     }, 1000);   
     }
 
     geoFind() {
-      this.http.get('https://ipinfo.io')
+      this.https.get('https://ipinfo.io')
       .subscribe (
       (res: Response) => {
       const currCity = res.json();
@@ -40,7 +40,7 @@ export class AppComponent {
     searchCity() {
       this.newDate = new Date().toDateString();
       this.fullImagePath = './assets/11.png';
-      this.https.get('http://api.openweathermap.org/data/2.5/weather?APPID=0ba5e82df49a15a79cec569618c56215&q=' + this.cityName)
+      this.https.get('https://api.openweathermap.org/data/2.5/weather?APPID=0ba5e82df49a15a79cec569618c56215&q=' + this.cityName)
       .subscribe (
       (res: Response) => {
       const weatherCity = res.json();
