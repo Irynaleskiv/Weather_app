@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  height: 100%;
+  margin: 0;
+  background: url('/assets/12.gif');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+/*  font-family: 'Mallanna', sans-serif;*/
+  font-family: 'Quicksand', sans-serif;
+}
