@@ -1,6 +1,13 @@
 # MyApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
+Instructions
+
+1. Clone this repo</br>
+2. Type "npm install"</br>
+3. Run "ng serve"</br>
+4. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files</br>
+
+Open <a href="https://irynaleskiv.github.io/Weather_app/index.html">link</a> to see the result
 
 ## Development server
 
